@@ -11,14 +11,39 @@
 	<h1>Library</h1>
 	<div class="navigationBar">
 
-		<ul>
+		<ul id="buttons">
 			<li><a href="#">Home</a></li>
-			<li><a href="#">Library</a></li>
+			<li id="library"><a href="#">Library</a></li>
 			<li><a href="#">Filler</a></li>
 			<li><a href="#">Filler</a></li>
-			<li><a href="#">About</a></li>
+			<li id="about"><a href="#">About</a></li>
 		</ul>
 
 	</div>
+
+	<script type="text/javascript">
+		// Get the elements from the list and add an EventListener based on their id to them.
+		var list = document.getElementById("buttons").getElementsByTagName('li');
+		for (var i = 0; i < list.length; i++) {
+			switch(list[i].id){
+				case "about":
+					list[i].addEventListener('click', changeToAbout, false);
+					break;
+				case "library":
+					list[i].addEventListener('click', changeToLibrary, true);
+					break;
+			}
+		}
+		function changeToAbout(){
+			change("about");
+		}
+		function changeToLibrary(){
+			change("library");
+		}
+		function change(page){ 
+			window.location.href = page + ".html";
+		}
+	</script>
 </body>
+
 </html>

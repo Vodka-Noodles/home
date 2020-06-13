@@ -1,8 +1,23 @@
+.header{
+
+	color: #dddddd;
+	font-size: 80%;
+}
+
+.header a{
+
+	text-decoration: none;
+	color: #dddddd;
+}
+
+.header a:hover{
+	color: white;
+}
+
 .navigationBar{
 	background-color: #dddddd;
-	margin-left: 2%;
-	margin-right: 2%;
-	margin-top: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
 .navigationBar ul{
@@ -36,7 +51,7 @@
 .content {
 
 	background-color: white;
-	width: 96%;
-	margin: 2%;
+	width: 98%;
+	margin: 1%;
 	border-radius: 0.5%;
 }

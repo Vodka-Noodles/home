@@ -7,9 +7,9 @@ body{
 .navigationBar ul{
 
 	background-color: #dddddd;
-
 	list-style-type: none;
 	overflow: hidden;
+
 	margin: 0;
 	padding: 0;
 }
